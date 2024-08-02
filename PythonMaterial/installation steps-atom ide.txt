@@ -1,0 +1,30 @@
+
+
+python installation folder:
+
+c:\..\Appdata\Programs\Python
+
+path need to be set to python installation folder
+
+
+IDE:
+=====
+
+atom ide need to be installed
+
+
+file-Settings-
+
+packages:
+
+install :
+
+python, language-python  ,platformio-ide-terminal, script
+
+open app1.py file
+
+Cntl+Shift+P   - Alt+Shift-T to open terminal
+
+>> python app1.py
+
+

@@ -1,0 +1,17 @@
+aftre installation-  type py in windows start menu then pyton CLI starts
+
+>>
+
+or else goto installation folder -> python
+
+ d:\python\python
+
+set path variable: c:\ProfileFiles\Python311
+type idle for editor 
+
+
+>>print(2)
+>>print(10*2)
+>>print("welcome")
+
+
