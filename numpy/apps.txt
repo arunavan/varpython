@@ -1,0 +1,65 @@
+pip install numpy
+
+
+create Array: passsing list
+====================================
+import numpy
+arr = numpy.array([1, 2, 3, 4, 5])
+print(arr)
+
+
+Using alias and print version:
+=====================================
+import numpy as np
+print(np.__version__)
+
+
+======================================
+import numpy as np
+arr = np.array([1, 2, 3, 4, 5])
+print(arr)
+print(type(arr))
+
+
+passing tuple:
+======================================
+import numpy as np
+arr = np.array((1, 2, 3, 4, 5))
+print(arr)
+
+
+2d array
+======================================
+import numpy as np
+arr = np.array([[1, 2, 3], [4, 5, 6]])
+print(arr)
+
+
+3d array
+======================================
+import numpy as np
+arr = np.array([[[1, 2, 3], [4, 5, 6]], [[1, 2, 3], [4, 5, 6]]])
+print(arr)
+
+
+dimensions:
+================================
+import numpy as np
+a = np.array(42)
+b = np.array([1, 2, 3, 4, 5])
+c = np.array([[1, 2, 3], [4, 5, 6]])
+d = np.array([[[1, 2, 3], [4, 5, 6]], [[1, 2, 3], [4, 5, 6]]])
+print(a.ndim)
+print(b.ndim)
+print(c.ndim)
+print(d.ndim)
+
+higher dimenstional array:
+=================================
+
+import numpy as np
+arr = np.array([1, 2, 3, 4], ndmin=5)
+print(arr)
+print('number of dimensions :', arr.ndim)
+
+
