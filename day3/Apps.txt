@@ -1,0 +1,90 @@
+# This program adds two numbers  				 - program 1
+
+num1 = 1.5
+num2 = 6.3
+
+# Add two numbers
+sum = float(num1) + float(num2)
+
+# Display the sum
+print('The sum of {0} and {1} is {2}'.format(num1, num2, sum))
+
+
+# Store input numbers          					 - program 2
+num1 = input('Enter first number: ')
+num2 = input('Enter second number: ')
+
+# Add two numbers
+sum = float(num1) + float(num2)
+
+# Display the sum
+print('The sum of {0} and {1} is {2}'.format(num1, num2, sum))
+
+#  								 - program 3
+a = [5,10,15,20,25,30,35,40]
+
+
+
+# a[2] = 15
+print("a[2] = ", a[2])
+
+
+# a[0:3] = [5, 10, 15]
+
+
+print("a[0:3] = ", a[0:3])
+
+
+
+# a[5:] = [30, 35, 40]
+
+print("a[5:] = ", a[5:])
+
+
+#								- program 4
+s = 'Hello world!'
+
+
+# s[4] = 'o'
+
+print("s[4] = ", s[4])
+
+
+# s[6:11] = 'world'
+print("s[6:11] = ", s[6:11])
+
+
+# Generates error
+
+# Strings are immutable in Python
+s[5] ='d'
+
+a = {5,2,3,1,4}
+
+
+
+# printing set variable
+
+print("a = ", a)
+
+
+
+# data type of variable a
+
+print(type(a))
+
+
+d = {1:'value','key':2}
+
+print(type(d))
+
+
+print("d[1] = ", d[1]);
+
+
+print("d['key'] = ", d['key']);
+
+
+# Generates error
+
+print("d[2] = ", d[2]);

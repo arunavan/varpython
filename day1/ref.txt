@@ -1,0 +1,18 @@
+intro - self
+intro participants
+discuss TOC
+
+lets get started, lets make our training more interactive, feel free ask queries
+
+python introduction
+software installation
+python commmand prompt  >>
+
+Visual studio code
+
+Jupyter notebook
+
+
+
+Commands:
+==============
