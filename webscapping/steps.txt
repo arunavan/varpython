@@ -1,0 +1,16 @@
+pip install virtualenv
+
+md webscrap1
+
+cd webscrap1
+
+
+virtualenv websc
+
+scripts>activate 
+
+pip install requests
+pip install urllib3
+pip install lxml
+pip install selenium
+pip install scrapy
