@@ -1,0 +1,191 @@
+
+
+
+
+
+convert list into string
+============================
+a_list = ["Python", "Convert", "List", "String", "Method"]  
+  
+s = " ".join( a_list )
+print(s)
+
+
+iterable = ["Python", "Convert", "List", "String", "Method"]  
+s = ""   
+  
+
+for e in iterable :   
+    s = s + " " + e
+print ( s )  
+
+
+display current date:
+=======================
+import datetime   
+dt = datetime.datetime.now() 
+print (str (dt) ) 
+
+
+comparing two list:
+==========================
+list1 = [11, 12, 13, 14, 15]  
+list2 = [12, 13, 11, 15, 14]  
+a = set(list1)  
+b = set(list2)  
+if a == b:  
+    print("The list1 and list2 are equal")  
+else:  
+    print("The list1 and list2 are not equal")  
+
+
+
+
+reverse string:
+==================
+s='java'
+rev=''
+for i in s:
+    rev=i+rev
+print(rev)
+
+slice operator:
+==================
+s='java'
+#print(s[::-1])
+
+
+while:
+===================
+rev=''
+i=len(s)
+while(i<0):
+    rev+=s[i-1]
+    i=i-1
+print(rev)
+
+reverse a number:
+=========================
+
+number = int(input("Enter the integer number: "))  
+rev = 0  
+while (number > 0):  
+    r = number % 10  
+    rev = (rev * 10) + r  
+    number = number // 10  
+print("The reverse number is : {}".format(rev))  
+
+missing elements in a list:
+===========================
+arr = [1,2,3,4,5,6,7,9,10]
+n = []
+for ele in range(arr[0], arr[-1]+1):
+    if ele not in arr:
+        missing_elements.append(ele)
+print(missing_elements)
+
+
+
+sort:
+=============
+a=[2,3,1,0,34,784,5,3,8,6]
+#a.sort()
+#print(a)
+for i in range(0,len(a)):
+    for j in range(i+1,len(a)):
+        if(a[i]>a[j]):
+            t=a[i]
+            a[i]=a[j]
+            a[j]=t
+for i in range(0, len(a)):    
+    print(a[i], end=" ");       
+
+prime:
+===========
+def PrimeChecking(num):  
+     if num > 1:  
+         for i in range(2, int(num/2) + 1):  
+             if (num % i) == 0:  
+                 print("The number ",num, "is not a prime number")  
+                break  
+        else:  
+            print("The number ",num, "is a prime number")  
+    else:  
+        print("The number ",num, "is not a prime number")  
+num = int(input("Enter a number to check prime or not: "))  
+PrimeChecking(num)  
+
+
+
+factorial:
+===========
+import math
+def factorial(num):
+	return(math.factorial(num))
+
+
+num = int(input('Please enter a number to find the factorial: '))
+print("The factorial of the given number", num, "is",
+	factorial(num))
+
+max:
+===============
+num1 = input('Enter the first number: ')
+num2 = input('Enter the second number: ')
+maximum = max(int(num1), int(num2))
+print("The maximum number is: ",maximum)
+
+sqroot:
+============
+n = float(input('Enter a number: '))
+n_sqrt = n ** 0.5
+print('The square root of {0} is {1}'.format(n ,n_sqrt))
+
+triangle:
+=========
+s1 = float(input('Enter first side value: '))
+s2 = float(input('Enter second side value:'))
+s3 = float(input('Enter third-side value:'))
+sp = (s1 + s2 + s3) / 2
+area = (sp*(sp-s1)*(sp-2)*(sp-s3)) ** 0.5
+print('The area of the triangle is: ', area)
+
+reverse:
+============
+num=int(input("Enter the number"))
+length = len(str(num))
+sum1 = 0
+while num != 0:
+	rem = num % 10
+	sum1 = sum1*10+(rem)
+	num = num//10
+print(sum1);
+
+
+
+armstrong:
+==============
+num=int(input("Enter the number to check armstrong number: "))
+arms = num
+length = len(str(num))
+sum1 = 0
+while num != 0:
+	rem = num % 10
+	sum1 = sum1+(rem**length)
+	num = num//10
+if arms == sum1:
+	print("The given number", arms, "is armstrong number")
+else:
+	print("The given number", arms, "is not an armstrong number")
+
+leapyear:
+==============
+def LeapYear(Year):  
+  if((Year % 400 == 0) or  
+     (Year % 100 != 0) and  
+     (Year % 4 == 0)):   
+    print("The given Year is a leap year");  
+  else:  
+    print ("The given Year is not a leap year")  
+Year = int(input("Enter the year to check whether a leap year or not: "))  
+LeapYear(Year) 
