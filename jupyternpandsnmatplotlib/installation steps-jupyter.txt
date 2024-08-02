@@ -1,0 +1,47 @@
+
+
+pip:
+
+d:\>python --version
+d:\>pip --version
+
+d:\>pip install jupyter
+....
+d:\>jupyter --version
+
+d:\> goto folder in workspace -cmd
+
+d:\python\apps\>jupyter notebook
+
+new notebook need to be created..
+
+jupyter notebook can be converted into python file
+======================================================
+>jupyter nbconvert app1.ipynb --to python
+
+Adding youtube link:
+====================================
+from IPython.display import YouTubeVideo
+YouTubeVideo('XEmptEx-dZQ', width=500, height=300)
+
+Markdown:
+=================
+Benefits of Markdown for Earth Data Science
+Being able to include both Markdown and code (e.g. Python) cells in a Jupyter
+ Notebook file supports reproducible science by allowing you to:
+
+Document your workflow: You can add text to the document that describes the steps 
+of your processing workflow (e.g. how data is being processed and what results are 
+produced).
+
+Describe your data: You can describe the data that you are using (e.g. source, 
+pre-processing, metadata).
+Interpret code outputs: You can add some text that interprets or discusses the 
+outputs.
+
+
+
+
+
+
+

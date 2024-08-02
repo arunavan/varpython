@@ -1,0 +1,48 @@
+
+
+pip uninstall pandas-datareader
+pip install pandas-datareader
+pip install datetime
+
+
+#app1
+
+import pandas_datareader.data as web
+df = web.DataReader('005930', 'naver', start='2019-09-10', end='2019-10-09')
+df.head()
+
+
+import pandas_datareader.data as web
+import pandas as pd
+import datetime as dt
+df = web.DataReader('GE', 'yahoo', start='2019-09-10', end='2019-10-09')
+df.head()
+
+            High   Low  Open  Close      Volume  Adj Close
+Date                                                      
+2019-09-10  9.27  8.90  8.91   9.14  62617200.0   9.062220
+2019-09-11  9.36  9.06  9.15   9.36  57094900.0   9.280347
+2019-09-12  9.52  9.22  9.40   9.26  68115100.0   9.181198
+2019-09-13  9.45  9.14  9.31   9.34  45589400.0   9.270529
+2019-09-16  9.42  9.17  9.30   9.38  45748400.0   9.310231
+
+
+start = dt.datetime(2010, 1, 29)
+end = dt.datetime.today()
+actions = web.DataReader('GOOG', 'yahoo-actions', start, end)
+actions.head()
+ 
+           action     value
+2015-04-27  SPLIT  0.997262
+2014-03-27  SPLIT  0.499500
+
+dividends = web.DataReader('IBM', 'yahoo-dividends', start, end)
+
+dividends.head()
+ 
+              action  value
+2021-05-07  DIVIDEND   1.64
+2021-02-09  DIVIDEND   1.63
+2020-11-09  DIVIDEND   1.63
+2020-08-07  DIVIDEND   1.63
+2020-05-07  DIVIDEND   1.63

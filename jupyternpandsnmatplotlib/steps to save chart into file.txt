@@ -1,0 +1,29 @@
+%matplotlib inline
+import matplotlib.pyplot as plt
+
+
+exp_vals = [1400,600,300,410,250]
+exp_labels = ["Home Rent","Food","Phone/Internet Bill","Car ","Other Utilities"]
+
+
+plt.axis("equal")
+plt.pie(exp_vals,labels=exp_labels,radius=2, autopct='%0.1f%%', explode=[0,0.1,0.1,0,0])
+plt.savefig("piechart.jpg", bbox_inches="tight", pad_inches=1, transparent=True)
+
+
+plt.pie(exp_vals,labels=exp_labels,radius=2, autopct='%0.1f%%', explode=[0,0.1,0.1,0,0])
+plt.savefig("c:/code/piechart.pdf", bbox_inches="tight", pad_inches=10, transparent=True)
+
+
+
+Exercise
+==========================================================
+Using following static data for companies revenues,
+
+company=['GOOGL','AMZN','MSFT','FB']
+
+revenue=[90,136,89,27]
+
+Plot a bar chart that looks like below
+
+Save this chart as jpg file and then pdf file with 5 inch of padding
